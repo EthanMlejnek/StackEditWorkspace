@@ -13,9 +13,10 @@
          * Example:  `/api/jobs/a38c1d0e2b4`
      * `resultUrl`: The URL that is used to fetch the actual results of the query once it completes
 	     * Example: Once `stage` attribute from the item returned by `statusUrl` is "Completed", fetch the `resultUrl` to get the actual response
-	     * Example: `/api/jobs/
+	     * Example: `/api/jobs/a38c1d0e2b4/result`
 	     * Results are stored/cached on the server itself until one of the following occurs:
-	         1. Resulst are fetched using `resultUrl`
+	         1. Results are fetched using `resultUrl`
+	         2. The job has been cleaned up. Every 15min all completed & not fetched or failed jobs are automatically cleared from memory.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk3MDA5NzE4XX0=
+eyJoaXN0b3J5IjpbMTQxMzcyNjI5MV19
 -->
