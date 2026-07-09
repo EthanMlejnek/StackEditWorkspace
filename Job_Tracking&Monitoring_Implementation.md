@@ -52,6 +52,9 @@
   "error": null
 }
 ```
+
+**4. Fetch Results once Completed:**
+* As described above, the `/api/jobs/{jobId}/result` endpoint or the `resultUrl` may be requested once the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAxMTk3MjIxXX0=
+eyJoaXN0b3J5IjpbMTczODc2NTM2MF19
 -->
