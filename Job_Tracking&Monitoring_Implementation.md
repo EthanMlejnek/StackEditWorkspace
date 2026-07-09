@@ -10,7 +10,9 @@
  * Will immediately return:
      * `jobId`:  Value that can be passed to `api/jobs/{jobId}` to receive a live status update of the job
      * `statusUrl`: Provides URL for `api/jobs/{jobId}` but with `jobId` already included
-     * 
+         * Example:  `/api/jobs/a38c1d0e2b4`
+     * `resultUrl`: The URL that is used to fetch the actual results of the query once it completes
+	     * Example: Once `stage` attribute from the item returned by `statusUrl` is "Completed", fetch the `resultUrl` to get the actual
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjIyNzc5MjRdfQ==
+eyJoaXN0b3J5IjpbLTEzNjc0OTEwMF19
 -->
