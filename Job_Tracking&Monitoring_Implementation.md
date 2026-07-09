@@ -30,10 +30,14 @@
 ```
 
 **3. Poll for Live Progress:**
+* As described above, once the `/start` URL has been requested, you may use the job status endpoints to poll for live progress of the query
 * Poll `/api/jobs/{jobId}` or the `statusUrl` at some interval to get live updates on query stages/progess
 * **Example Response(s):**
 	* `{ "state": "Running", "stage": "Resolving Chamber Modules (1)", ..., "itemsProcessed": 0 }`
+	* ...
 	* `{ "state": "Completed", "stage": "Completed (8)", "itemsProcessed: 1,234,567 }`
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NzQwNTc4MF19
+eyJoaXN0b3J5IjpbLTExODM4OTY4OV19
 -->
