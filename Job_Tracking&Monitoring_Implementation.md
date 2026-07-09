@@ -32,7 +32,8 @@
 **3. Poll for Live Progress:**
 * Poll `/api/jobs/{jobId}` or the `statusUrl` at some interval to get live updates on query stages/progess
 * **Example Response(s):**
-	* `{ "state": "Running", "stage": "`
+	* `{ "state": "Running", "stage": "Resolving Chamber Modules (1)", ..., "itemsProcessed": 0 }`
+	* `{ "state": "Completed", "stage": "Completed (8)", "itemsProcessed: 1,234,567 }`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MTI0NTc2NV19
+eyJoaXN0b3J5IjpbLTU5NzQwNTc4MF19
 -->
