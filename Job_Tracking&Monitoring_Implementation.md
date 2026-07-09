@@ -8,7 +8,9 @@
  * Add authorization header and append JWT token:
      * Authorization: Bearer <JWT_token>
  * Will immediately return:
-     * `jobI
+     * `jobId`:  Value that can be passed to `api/jobs/{jobId}` to receive a live status update of the job
+     * `statusUrl`: Provides URL for `api/jobs/{jobId}` but with `jobId` already included
+     * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgyNDU5MjkxXX0=
+eyJoaXN0b3J5IjpbLTIwNjIyNzc5MjRdfQ==
 -->
