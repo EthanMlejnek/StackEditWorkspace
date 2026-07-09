@@ -30,14 +30,28 @@
 ```
 
 **3. Poll for Live Progress:**
-* As described above, once the `/start` URL has been requested, you may use the job status endpoints to poll for live progress of the query
-* Poll `/api/jobs/{jobId}` or the `statusUrl` at some interval to get live updates on query stages/progess
+* As described above, once the `/start` URL has been requested, you may poll `/api/jobs/{jobId}` or the `statusUrl` at some interval to get live updates on query stages/progess
 * **Example Response(s):**
 	* `{ "state": "Running", "stage": "Resolving Chamber Modules (1)", ..., "itemsProcessed": 0 }`
 	* ...
 	* `{ "state": "Completed", "stage": "Completed (8)", "itemsProcessed: 1,234,567 }`
 
-
+**Full Response Object Example:**
+```json
+{
+  "jobId": "8fa67a88ef4f44da8e6480276d8f91cd",
+  "type": "chart-data-v2",
+  "state": "Running",
+  "percentComplete": null,
+  "stage": "Streaming rows (5)",
+  "message": "Streaming Rows for Group: 18_1490 Channel: 224R_23A_224W_Black_8 total rows processed: 587,000",
+  "itemsProcessed": 587000,
+  "totalItems": null,
+  "startedAtUtc": "2026-07-09T14:40:28.708607Z",
+  "updatedAtUtc": "2026-07-09T14:40:55.8045504Z",
+  "error": null
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODM4OTY4OV19
+eyJoaXN0b3J5IjpbOTAxMTk3MjIxXX0=
 -->
