@@ -12,7 +12,10 @@
      * `statusUrl`: Provides URL for `api/jobs/{jobId}` but with `jobId` already included
          * Example:  `/api/jobs/a38c1d0e2b4`
      * `resultUrl`: The URL that is used to fetch the actual results of the query once it completes
-	     * Example: Once `stage` attribute from the item returned by `statusUrl` is "Completed", fetch the `resultUrl` to get the actual
+	     * Example: Once `stage` attribute from the item returned by `statusUrl` is "Completed", fetch the `resultUrl` to get the actual response
+	     * Example: `/api/jobs/
+	     * Results are stored/cached on the server itself until one of the following occurs:
+	         1. Resulst are fetched using `resultUrl`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjc0OTEwMF19
+eyJoaXN0b3J5IjpbMjk3MDA5NzE4XX0=
 -->
