@@ -20,8 +20,20 @@
 	         1. Results are fetched using `resultUrl`
 	         2. The job has been cleaned up. Every 15min all completed & not fetched or failed jobs are automatically cleared from memory.
 
+**Full Response Object Example:**
+```json
+{
+  "jobId": "a3f8c1d0e2b4...",
+  "statusUrl": "/api/jobs/a3f8c1d0e2b4...",
+  "resultUrl": "/api/jobs/a3f8c1d0e2b4.../result"
+}
+```
+
 **3. Poll for Live Progress:**
-* As described above, the following URLs may be polled 
+* As described above, the following URLs may be polled at some interval to get live job status updates: 
+	* `/api/jobs/{jobId}`
+	* `statusUrl`
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MjAyNDY2MF19
+eyJoaXN0b3J5IjpbMTcyODc0MTgxMV19
 -->
