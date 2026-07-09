@@ -1,10 +1,12 @@
 ## Job Status Tracking for Charts:
 
 **1. Obtain JWT token**
+
   * JWT token returned by `/api/authentication/authenticate`
   * Should be returned after authenticating user
-  
+ * **
 **2. Start "Background Job"**
+
 * **Request URL is the same as the original but with `/start` at the end**
     * `http://localhost:53097/api/measurement/chartDataFilteredV2/start?testIds=1,2,3`
  * **Add authorization header and append JWT token:** (may change)
@@ -19,6 +21,8 @@
 	     * Results are stored/cached on the server itself until one of the following occurs:
 	         1. Results are fetched using `resultUrl`
 	         2. The job has been cleaned up. Every 15min all completed & not fetched or failed jobs are automatically cleared from memory.
+
+* **
 
 **Full Response Object Example:**
 ```json
@@ -54,7 +58,9 @@
 ```
 
 **4. Fetch Results once Completed:**
-* As described above, the `/api/jobs/{jobId}/result` endpoint or the `resultUrl` may be requested once the 
+* As described above, the `/api/jobs/{jobId}/result` endpoint or the `resultUrl` may be requested once the job has completed
+	* **
+	*  **
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczODc2NTM2MF19
+eyJoaXN0b3J5IjpbNTE2NzUzNzk4XX0=
 -->
