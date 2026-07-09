@@ -30,10 +30,9 @@
 ```
 
 **3. Poll for Live Progress:**
-* As described above, the following URLs may be polled at some interval to get live job status updates: 
-	* `/api/jobs/{jobId}`
-	* `statusUrl`
-* 
+* Poll `/api/jobs/{jobId}` or the `statusUrl` at some interval to get live updates on query stages/progess
+* **Example Response(s):**
+	* `{ "state": "Running", "stage": "`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyODc0MTgxMV19
+eyJoaXN0b3J5IjpbLTI2MTI0NTc2NV19
 -->
