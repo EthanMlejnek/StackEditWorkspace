@@ -19,6 +19,9 @@
 	     * Results are stored/cached on the server itself until one of the following occurs:
 	         1. Results are fetched using `resultUrl`
 	         2. The job has been cleaned up. Every 15min all completed & not fetched or failed jobs are automatically cleared from memory.
+
+**3. Poll for Live Progress:**
+* As described above, the following URLs may be polled 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg4OTk1MjMwXX0=
+eyJoaXN0b3J5IjpbLTY1MjAyNDY2MF19
 -->
