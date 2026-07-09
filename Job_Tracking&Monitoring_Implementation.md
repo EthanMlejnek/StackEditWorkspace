@@ -60,8 +60,8 @@
 * **
 
 **4. Fetch Results once Completed:**
-* As described above, the `/api/jobs/{jobId}/result` endpoint or the `resultUrl` may be requested once the job has completed
-	* **Example:** Once the `state` attribute from the `status 
+* As described above, the `/api/jobs/{jobId}/result` endpoint or the `resultUrl` may be requested once the job has completed to fetch the actual results/data from
+	* **Example:** Once the `state` attribute from the `status` response is "Completed", fetch `/api/jobs/a38c1d0e2b4/result`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MTMxNTE2OF19
+eyJoaXN0b3J5IjpbLTU2OTE1MzI3N119
 -->
