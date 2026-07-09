@@ -4,7 +4,11 @@
   * Should be returned after authenticating user
 2. Start "Background Job"
 * Request URL is the same as the original but with `/start` at the end
-* 
+    * `http://localhost:53097/api/measurement/chartDataFilteredV2/start?testIds=1,2,3`
+ * Add authorization header and append JWT token:
+     * Authorization: Bearer <JWT_token>
+ * Will immediately return:
+     * `jobI
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEyMjc0OTg0XX0=
+eyJoaXN0b3J5IjpbOTgyNDU5MjkxXX0=
 -->
