@@ -60,8 +60,12 @@
 * **
 
 **4. Fetch Results once Completed:**
-* As described above, the `/api/jobs/{jobId}/result` endpoint or the `resultUrl` may be requested once the job has completed to fetch the actual results/data from
+* As described above, the `/api/jobs/{jobId}/result` endpoint or the `resultUrl` may be requested once the job has completed to fetch the actual results/data returned by the job
 	* **Example:** Once the `state` attribute from the `status` response is "Completed", fetch `/api/jobs/a38c1d0e2b4/result`
+
+ * Results are stored/cached on the server itself until one of the following occurs:
+	         1. Results are fetched using `resultUrl`
+	         2. The job has been cleaned up. Every 15min all completed & not fetched or failed 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2OTE1MzI3N119
+eyJoaXN0b3J5IjpbOTg1MjQ5NTA5XX0=
 -->
