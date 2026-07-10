@@ -77,7 +77,9 @@ Summary of Job Status Tracking API endpoints integrated:
 |--|--|--|
 | GET | `/api/jobs` | All jobs; filter by `?type=chart-data-v2` and/or `?state=Running` |
 | GET | `/api/jobs/summary` | Tile cards: counts per type + avg duration
-| GET | 
+| GET | `/api/jobs/dashboard` | Single combined call: job summary + server memory/usage metrics |
+| GET | `/api/system/memory` | Memory-only snapshot if you want to poll it independently |
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTc2ODMzNiw5ODUyNDk1MDldfQ==
+eyJoaXN0b3J5IjpbLTE5Njc2MTk1NjYsOTg1MjQ5NTA5XX0=
 -->
