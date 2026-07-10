@@ -71,7 +71,7 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 
 ## Job Status Tracking (General)
 
-####  Summary of Job Status Tracking API endpoints integrated:
+### Summary of Job Status Tracking API endpoints integrated:
 
 | Method | URL | Purpose |
 |--|--|--|
@@ -80,8 +80,8 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 | GET | `/api/jobs/dashboard` | Single combined call: job summary + server memory/usage metrics |
 | GET | `/api/system/memory` | Memory-only snapshot if you want to poll it independently |
 
-* ** 
-#### Method Details
+### Method Details
+* **
 
 **Endpoint:** `/api/jobs`
 **Function:** `GetAllJobs`
@@ -108,5 +108,5 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzM1MzY1MTUsOTg1MjQ5NTA5XX0=
+eyJoaXN0b3J5IjpbMzMxMDY2NTUsOTg1MjQ5NTA5XX0=
 -->
