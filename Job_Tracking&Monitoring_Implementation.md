@@ -94,10 +94,12 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 
 ```json
 {
-	jobId (string),
-	type (string), // Caller-supp
+	jobId (string), // Unique identifier for the job
+	type (string), // Caller-supplied job type/category e.g.,"chart-data-v2"
+	state (JobState), // Current lifecycle state
+	percentageComplete (int?)
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTUyNDUxMzMsOTg1MjQ5NTA5XX0=
+eyJoaXN0b3J5IjpbLTI2OTQzNTU4MCw5ODUyNDk1MDldfQ==
 -->
