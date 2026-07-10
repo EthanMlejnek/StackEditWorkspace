@@ -92,9 +92,12 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 
 **Return Shape:** `<List<JobProgress>>`
 
-```csharp
-public class JobProgress 
-{}
+```json
+{
+	jobId (string),
+	type (string), // Caller-supp
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkyNjY1MjksOTg1MjQ5NTA5XX0=
+eyJoaXN0b3J5IjpbLTE5OTUyNDUxMzMsOTg1MjQ5NTA5XX0=
 -->
