@@ -100,9 +100,12 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 	percentageComplete (int?), // Overall completion percentage (0-100) or null 
 	stage (string?), // Human-readable name of the currrent processing stage
 	message (string?), // Optional detailed status message for the current stage
-	itemsProcessed (long), // Numeb
+	itemsProcessed (long), // Number of items (e.g., rows) processed so far
+	totalItems (long?), // Total item count when known; null when unknown
+	startedAtUtc (DateTime) // When the job was created (UTC)
+	updatedAtUtc (Date
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMzkyMDk3NCw5ODUyNDk1MDldfQ==
+eyJoaXN0b3J5IjpbLTYxOTY0Njk5Nyw5ODUyNDk1MDldfQ==
 -->
