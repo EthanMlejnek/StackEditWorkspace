@@ -81,7 +81,12 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 | GET | `/api/system/memory` | Memory-only snapshot if you want to poll it independently |
 
 * ** 
-#### M
+#### Model Details
+
+**Endpoint:** `/api/jobs`
+**Method:** GET
+**Purpose:** Lists all tracked jobs, ordered newest-first. Supports optional filtering: 
+* <c>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjM2NzY2OTMsOTg1MjQ5NTA5XX0=
+eyJoaXN0b3J5IjpbNzQ3ODU5NzYwLDk4NTI0OTUwOV19
 -->
