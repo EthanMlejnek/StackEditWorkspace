@@ -86,7 +86,10 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 **Endpoint:** `/api/jobs`
 **Method:** GET
 **Purpose:** Lists all tracked jobs, ordered newest-first. Supports optional filtering: 
-* <c>
+* **Type:** Drill into a specific method. E.g., "chart-data-v2"
+* **State:** Filter by job state. E.g., "Running"
+
+**Return Shape:**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ3ODU5NzYwLDk4NTI0OTUwOV19
+eyJoaXN0b3J5IjpbLTIxMzAwNzY2MDAsOTg1MjQ5NTA5XX0=
 -->
