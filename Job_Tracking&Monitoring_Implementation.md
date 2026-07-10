@@ -73,6 +73,8 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 
 ### Summary of Job Status Tracking API endpoints integrated:
 
+* ** 
+
 | Method | URL | Purpose |
 |--|--|--|
 | GET | `/api/jobs` | All jobs; filter by `?type=chart-data-v2` and/or `?state=Running` |
@@ -107,6 +109,11 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 	error (string?), // Error message when "State" is "Failed"
 }
 ```
+
+**Endpoint:** `/api/jobs/summary`
+**Function:** `GetSummary`
+**Method:** GET
+**Purpose:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMxMDY2NTUsOTg1MjQ5NTA5XX0=
+eyJoaXN0b3J5IjpbLTEwMTA5NTU4ODAsOTg1MjQ5NTA5XX0=
 -->
