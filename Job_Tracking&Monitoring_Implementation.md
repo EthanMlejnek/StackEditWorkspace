@@ -1,6 +1,7 @@
 ## Job Status Tracking for Trackable Methods:
 
-Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endpoint) as an example
+Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endpoint) as an example. 
+
 **1. Obtain JWT token**
 
   * JWT token returned by `/api/authentication/authenticate`
@@ -69,6 +70,8 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 	         2. The job has been cleaned up. Every 15min all completed & not fetched or failed 
 
 ## Job Status Tracking (General)
+
+Summary of Job Status Tr
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MTczNDE0MCw5ODUyNDk1MDldfQ==
+eyJoaXN0b3J5IjpbNzczNDk3NDQyLDk4NTI0OTUwOV19
 -->
