@@ -81,7 +81,7 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 | GET | `/api/system/memory` | Memory-only snapshot if you want to poll it independently |
 
 * ** 
-#### Model Details
+#### Method Details
 
 **Endpoint:** `/api/jobs`
 **Method:** GET
@@ -89,7 +89,7 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 * **Type:** Drill into a specific method. E.g., "chart-data-v2"
 * **State:** Filter by job state. E.g., "Running"
 
-**Return Shape:**
+**Return Shape:** `<List<JobProgress>>`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzAwNzY2MDAsOTg1MjQ5NTA5XX0=
+eyJoaXN0b3J5IjpbLTQ1MTgxNTMyNCw5ODUyNDk1MDldfQ==
 -->
