@@ -1,5 +1,6 @@
-## Job Status Tracking for Charts:
+## Job Status Tracking for Trackable Methods:
 
+Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endpoint) as an example
 **1. Obtain JWT token**
 
   * JWT token returned by `/api/authentication/authenticate`
@@ -66,6 +67,8 @@
  * Results are stored/cached on the server itself until one of the following occurs:
 	         1. Results are fetched using `resultUrl`
 	         2. The job has been cleaned up. Every 15min all completed & not fetched or failed 
+
+## Job Status Tracking (General)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg1MjQ5NTA5XX0=
+eyJoaXN0b3J5IjpbLTI4MTczNDE0MCw5ODUyNDk1MDldfQ==
 -->
