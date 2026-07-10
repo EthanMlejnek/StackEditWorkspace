@@ -84,12 +84,17 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 #### Method Details
 
 **Endpoint:** `/api/jobs`
+**Function:** `GetAllJobs`
 **Method:** GET
 **Purpose:** Lists all tracked jobs, ordered newest-first. Supports optional filtering: 
 * **Type:** Drill into a specific method. E.g., "chart-data-v2"
 * **State:** Filter by job state. E.g., "Running"
 
 **Return Shape:** `<List<JobProgress>>`
+
+```csharp
+public class JobProgress 
+{}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MTgxNTMyNCw5ODUyNDk1MDldfQ==
+eyJoaXN0b3J5IjpbOTkyNjY1MjksOTg1MjQ5NTA5XX0=
 -->
