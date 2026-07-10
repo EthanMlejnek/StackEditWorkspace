@@ -71,7 +71,13 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 
 ## Job Status Tracking (General)
 
-Summary of Job Status Tr
+Summary of Job Status Tracking API endpoints integrated: 
+
+| Method | URL | Purpose |
+|--|--|--|
+| GET | `/api/jobs` | All jobs; filter by `?type=chart-data-v2` and/or `?state=Running` |
+| GET | `/api/jobs/summary` | Tile cards: counts per type + avg duration
+| GET | 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzczNDk3NDQyLDk4NTI0OTUwOV19
+eyJoaXN0b3J5IjpbLTIxMTc2ODMzNiw5ODUyNDk1MDldfQ==
 -->
