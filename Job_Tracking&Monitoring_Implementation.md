@@ -95,17 +95,18 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 ```json
 {
 	jobId (string), // Unique identifier for the job
-	type (string), // Caller-supplied job type/category e.g.,"chart-data-v2"
-	state (JobState), // Current lifecycle state
+	type (string),     // Caller-supplied job type/category e.g.,"chart-data-v2"
+	state (JobState),  // Current lifecycle state
 	percentageComplete (int?), // Overall completion percentage (0-100) or null 
 	stage (string?), // Human-readable name of the currrent processing stage
 	message (string?), // Optional detailed status message for the current stage
 	itemsProcessed (long), // Number of items (e.g., rows) processed so far
 	totalItems (long?), // Total item count when known; null when unknown
-	startedAtUtc (DateTime) // When the job was created (UTC)
-	updatedAtUtc (Date
+	startedAtUtc (DateTime), // When the job was created (UTC)
+	updatedAtUtc (DateTime), // When the progress was last updated
+	error (string?), // Error message when "State" is "Failed"
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxOTY0Njk5Nyw5ODUyNDk1MDldfQ==
+eyJoaXN0b3J5IjpbLTExMzM1MzY1MTUsOTg1MjQ5NTA5XX0=
 -->
