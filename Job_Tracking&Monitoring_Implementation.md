@@ -97,9 +97,12 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 	jobId (string), // Unique identifier for the job
 	type (string), // Caller-supplied job type/category e.g.,"chart-data-v2"
 	state (JobState), // Current lifecycle state
-	percentageComplete (int?)
+	percentageComplete (int?), // Overall completion percentage (0-100) or null 
+	stage (string?), // Human-readable name of the currrent processing stage
+	message (string?), // Optional detailed status message for the current stage
+	itemsProcessed (long), // Numeb
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2OTQzNTU4MCw5ODUyNDk1MDldfQ==
+eyJoaXN0b3J5IjpbMTMwMzkyMDk3NCw5ODUyNDk1MDldfQ==
 -->
