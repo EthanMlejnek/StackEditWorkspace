@@ -113,7 +113,7 @@ Example below uses `/api/measurement/chartDataFilteredV2` (multi-test chart endp
 **Endpoint:** `/api/jobs/summary`
 **Function:** `GetSummary`
 **Method:** GET
-**Purpose:
+**Purpose:** Single combined cell for the dashboard status bar: per-type jobs counts + live server memory. Safe to poll every few seconds — all data comes from in-process counters. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTA5NTU4ODAsOTg1MjQ5NTA5XX0=
+eyJoaXN0b3J5IjpbMTc2MjM1Njc1Miw5ODUyNDk1MDldfQ==
 -->
