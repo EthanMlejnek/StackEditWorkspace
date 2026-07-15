@@ -42,7 +42,10 @@ Doable, but would take some time to integrate. We would essentially need to migr
 **Suggestion:** Migrate database to Azure SQL
 > **Azure SQL:** Similar to App Service,  Azure SQL Database is a fully managed database service where Microsoft handles patching, backups, and uptime, and where your data lives in its own dedicated space rather than sharing the server with other applications. 
 
+**Solution:** Migrate database to Azure SQL
+* Set up Private Endpoint so the database is only reachable from your own App Service backend, not exposed on a shared network
+* Migrate the existing `TestLabCentral` data into the new Azure SQL database using a s
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MjM2NzI3OSwtMTIxNzU5Njg4NSwxMj
-g2Mjk0ODE1LDU0NDIzOTIxMF19
+eyJoaXN0b3J5IjpbMTEyODA4NTQ3LC0xMjE3NTk2ODg1LDEyOD
+YyOTQ4MTUsNTQ0MjM5MjEwXX0=
 -->
