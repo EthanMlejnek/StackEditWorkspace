@@ -12,7 +12,11 @@ A "pet server" is infrastructure that's manually configured, unique, and irrepla
 > **PaaS:** Platform as a Service is a cloud computing model where a provider delivers a complete, on-demand environment for developing, testing, and managing software applications. 
 
 **Solution:** Move Frontend + Backend to App Service
+Benefits: 
+* Platform-managed TLS: no more manually installing/renewing cers on a VM 
+* Slot-based deploys
 > **Azure App Service:** Is a fully managed Platform-as-a-Service (PaaS) that lets you build. deploy, and scale web apps, mobile backends, and RESTful APIs without managing the underlying infrastructure. It handles OS patching, load balancing, and automated scailing, letting you focus purely on development. 
+
 
 **Difficulty:** Medium-High
 **Estimated Relative Effort:** Weeks
@@ -28,5 +32,5 @@ A "pet server" is infrastructure that's manually configured, unique, and irrepla
 **Feasibility:**
 Doable, but would take some time to integrate. We would essentially need to migrate the frontend/backend services to App Service resources, update/rewrite the CI/CD pipeline deployment process, and reconfigure DNS cutover to migrate the `orbit.commscope.com` hostname. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMjIzMDAwOSw1NDQyMzkyMTBdfQ==
+eyJoaXN0b3J5IjpbMTQyODM5Mjc1MSw1NDQyMzkyMTBdfQ==
 -->
