@@ -1,4 +1,5 @@
-### Conerns Regarding Current Prod S
+### Conerns Regarding Current Prod Server & Service Hosting
+
 **Problem Statement:** The production Next.js frontend and ASP.NET Core backend both run as manually-managed processes on a single Azure VM, using custom ports and manually configured TLS certificates. 
 
 A "pet server" is infrastructure that's manually configured, unique, and irreplaceable. This is not a redundant design and therefore if it goes down it must be manually fixed, unlike the "cattle" architecture which is disposable/repeatable. 
@@ -79,8 +80,13 @@ Doable, but would take some time to integrate. We would essentially need to migr
 * **Solution:** 
     * Deploy a second, lower-cost App Service (a "dev" or "staging" environment) inside the same Azure setup as production, instead of using the on-prem server for testing.
     * Point that environment at the *new development database* 
-* **Difficulty/Requirements/Effort:** Similar to migrating prod to App Service; second, lower-tier App Service and pipeline branch/trigger rewriting for new dev deployments. 
+* **Difficulty/Requirements/Effort:** Similar to migrating prod to App Service; second, lower-tier App Service and pipeline branch/trigger rewriting for new dev deployments.
+
+--- 
+### Summary
+
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MDM4MDkzMSw3NzI0NDIxNTYsLTEyMT
-c1OTY4ODUsMTI4NjI5NDgxNSw1NDQyMzkyMTBdfQ==
+eyJoaXN0b3J5IjpbLTE4MDgzNjU0OTYsNzcyNDQyMTU2LC0xMj
+E3NTk2ODg1LDEyODYyOTQ4MTUsNTQ0MjM5MjEwXX0=
 -->
