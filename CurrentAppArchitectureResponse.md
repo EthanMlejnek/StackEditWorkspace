@@ -13,7 +13,7 @@ A "pet server" is infrastructure that's manually configured, unique, and irrepla
 
 **Solution:** Move Frontend + Backend to App Service
 Benefits: 
-* Platform-managed TLS: no more manually installing/renewing cers on a VM 
+* Platform-managed TLS: no more manually installing/renewing certs on a VM 
 * Slot-based deploys: Deploy to a staging slot, swap to production with near-zero downtime, instead of the current "deploy to dev server, verify, then manually deploy to prod server" workflow
 * No custom ports: App Service exposes standard 443/80 with routing handled by the platform, instead of the frontend needing to know where the backend lives at `:53098`
 > **Azure App Service:** Is a fully managed Platform-as-a-Service (PaaS) that lets you build. deploy, and scale web apps, mobile backends, and RESTful APIs without managing the underlying infrastructure. It handles OS patching, load balancing, and automated scailing, letting you focus purely on development. 
@@ -31,7 +31,7 @@ Benefits:
 * How would we go about requesting/accessing the App Service resources? Would we need to be concerned about the cost of these resources? 
 
 **Feasibility:**
-Doable, but would take some time to integrate. We would essentially need to migrate the frontend/backend services to App Service resources, update/rewrite the CI/CD pipeline deployment process, and reconfigure DNS cutover to migrate the `orbit.commscope.com` hostname. I imagine it would be a si
+Doable, but would take some time to integrate. We would essentially need to migrate the frontend/backend services to App Service resources, update/rewrite the CI/CD pipeline deployment process, and reconfigure DNS cutover to migrate the `orbit.commscope.com` hostname. One of the benefits mentioned was "no more manually installing/renewing certs on a VM," 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NzA4MjAzMCw1NDQyMzkyMTBdfQ==
+eyJoaXN0b3J5IjpbLTI3MzYyMjQxMyw1NDQyMzkyMTBdfQ==
 -->
