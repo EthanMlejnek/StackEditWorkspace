@@ -34,6 +34,8 @@ A "pet server" is infrastructure that's manually configured, unique, and irrepla
 Doable, but would take some time to integrate. We would essentially need to migrate the frontend/backend services to App Service resources, update/rewrite the CI/CD pipeline deployment process, and reconfigure DNS cutover to migrate the `orbit.commscope.com` hostname. One of the benefits mentioned was "no more manually installing/renewing certs on a VM," so maybe the DNS would be easier to configure, it would also provide the benefit of not having to worry about server config stuff in the future. I imagine the migration/configuration process would be similar to when I configured the production server, but perhaps easier? 
 
 --- 
+
+
 **Problem Statement A**: `TestLabCentral` database name suggests the database is a test/lab database, but diagram shows only a single database backing prod/dev. Concern is that the name suggests "lab/test" data but production traffic depends on it, is production actually resting on a dataset that was never meant to be authoritative? 
 **Problem Statement B:** "SQL on a VM", the database runs on a SQL server instance that also hosts unrelated databases, we don't manage or have visibility into the server's patching, backups, or capacity
 
@@ -58,6 +60,7 @@ Doable, but would take some time to integrate. We would essentially need to migr
 ### Move Development Server to Azure + Integrate Seperate Dev DB 
 
 ### Integrate Seperate Development Database
+
 **Problem Statement (Dev DB):** Both development and production servers point at the same, single DB. If something goes wrong in testing, it can effect production. 
 * **Suggestion:** Implement a seperate development server
 * **Solution:**
@@ -67,9 +70,9 @@ Doable, but would take some time to integrate. We would essentially need to migr
         * Raises the same concern as the "dev server" problem statement but with the DB instead of the servers themselves. 
 * **Difficulty/Requirements/Effort:** Similar to migrating prod DB to Azure SQL DB
 
+* ** 
 
-#### Migrating Development Server to App Service
-
+### Migrating Development Server to App Service
 **Problem Statement (Dev Server):** Dev server is HTTP-only and is an on-prem server, it runs Windows Server 2019 which is different that the OS run by prod (Windows Server Datacenter 2022) and is out of mainstream support compared to WS2022. 
 * **Suggestion:** that if the app is going to live in Azure anyway, a dev slot/environment in the same "landing zone" resolves the "hybrid dependency" 
 * **Solution:** 
@@ -77,6 +80,6 @@ Doable, but would take some time to integrate. We would essentially need to migr
     * Point that environment at the *new development database* 
 * **Difficulty/Requirements/Effort:** Similar to migrating prod to App Service; second, lower-tier App Service and pipeline branch/trigger rewriting for new dev deployments. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNDczMzk2MSw3NzI0NDIxNTYsLTEyMT
-c1OTY4ODUsMTI4NjI5NDgxNSw1NDQyMzkyMTBdfQ==
+eyJoaXN0b3J5IjpbLTE0MjgxMjg4MjQsNzcyNDQyMTU2LC0xMj
+E3NTk2ODg1LDEyODYyOTQ4MTUsNTQ0MjM5MjEwXX0=
 -->
