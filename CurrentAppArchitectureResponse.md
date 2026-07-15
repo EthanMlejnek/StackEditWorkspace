@@ -55,8 +55,9 @@ Doable, but would take some time to integrate. We would essentially need to migr
 
 ---
 
-Problem Statement A: Dev server is HTTP-only and is an on-prem server, it runs Windows Server 2019 which is different that the OS run by prod (Windows Server Datacen
+Problem Statement A: Dev server is HTTP-only and is an on-prem server, it runs Windows Server 2019 which is different that the OS run by prod (Windows Server Datacenter 2022) and is out of mainstream support compared to WS2022. 
+* Suggests that if the app is going to live in Azure anyway, a dev slot/environment in the same "landing zone" resolves the "hybrid depen
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk5NDA1MTI4LDc3MjQ0MjE1NiwtMTIxNz
-U5Njg4NSwxMjg2Mjk0ODE1LDU0NDIzOTIxMF19
+eyJoaXN0b3J5IjpbLTIwOTQyMDkxMDAsNzcyNDQyMTU2LC0xMj
+E3NTk2ODg1LDEyODYyOTQ4MTUsNTQ0MjM5MjEwXX0=
 -->
