@@ -8,7 +8,9 @@ A "pet server" is infrastructure that's manually configured, unique, and irrepla
 * **Single Point of Failure:** It's a single point of failure, if the VM goes down, both services go down together
 * **Difficult to Scale:** Scaling either tier independently isn't possible without re-architecting (e.g., more frontend capacity can't be integrated without more backend capacity) 
 
-**Suggestion: 
+**Suggestion:** App Services for both tiers with Private Endpoints - replaces the VM with two managed PaaS App Service instances. 
+> **PaaS:** Platform as a Service 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4OTk1MTEzOF19
+eyJoaXN0b3J5IjpbLTM4Njk5NDAxOV19
 -->
