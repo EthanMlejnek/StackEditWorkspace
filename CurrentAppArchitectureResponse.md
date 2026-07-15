@@ -62,9 +62,9 @@ Doable, but would take some time to integrate. We would essentially need to migr
 * **Solution:** 
     * Deploy a second, lower-cost App Service (a "dev" or "staging" environment) inside the same Azure setup as production, instead of using the on-prem server for testing.
     * Point that environment at the *new development database* 
-     * Similar solution/requirements as migration Production to App Service environment, but for development instead. 
-* **Difficulty:** Same as 
+* **Difficulty:** Same as migrating prod to App Service 
+* **Requirements:** Similar to migrating prod to App Service; second, lower-tier App Service and pipeline branch/trig
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg3NjM2ODQ1LDc3MjQ0MjE1NiwtMTIxNz
-U5Njg4NSwxMjg2Mjk0ODE1LDU0NDIzOTIxMF19
+eyJoaXN0b3J5IjpbMzE2NzA5ODcsNzcyNDQyMTU2LC0xMjE3NT
+k2ODg1LDEyODYyOTQ4MTUsNTQ0MjM5MjEwXX0=
 -->
