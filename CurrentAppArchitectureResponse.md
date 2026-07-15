@@ -9,8 +9,10 @@ A "pet server" is infrastructure that's manually configured, unique, and irrepla
 * **Difficult to Scale:** Scaling either tier independently isn't possible without re-architecting (e.g., more frontend capacity can't be integrated without more backend capacity) 
 
 **Suggestion:** App Services for both tiers with Private Endpoints - replaces the VM with two managed PaaS App Service instances. 
-> **PaaS:** Platform as a Service 
+> **PaaS:** Platform as a Service is a cloud computing model where a provider delivers a complete, on-demand environment for developing, testing, and managing software applications. 
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4Njk5NDAxOV19
+eyJoaXN0b3J5IjpbNTQ0MjM5MjEwXX0=
 -->
