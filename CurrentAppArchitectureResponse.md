@@ -40,8 +40,9 @@ Doable, but would take some time to integrate. We would essentially need to migr
 * **Note:** Original concern was likely that we have a SQL server running on a VM and not a managed database and therefore we are responsible for manually patching, performing backups, etc. In reality, the problem statement description is more accurate as we werer granted the SQL server by IT and lack the permissions to perform database management actions. Either way I think this stems from confusion surrounding the DB and where it is hosted exactly, and the suggested solution is the same either way. 
 
 **Suggestion:** Migrate database to Azure SQL
-> **Azure SQL:** Similar to App Service,  Azure SQL Database is a fully managed database service where mic
+> **Azure SQL:** Similar to App Service,  Azure SQL Database is a fully managed database service where Microsoft handles patching, backups, and uptime, and where your data lives in its own dedicated space rather than sharing the server with other applications. 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzMzNzU3OTksLTEyMTc1OTY4ODUsMT
-I4NjI5NDgxNSw1NDQyMzkyMTBdfQ==
+eyJoaXN0b3J5IjpbMTM0MjM2NzI3OSwtMTIxNzU5Njg4NSwxMj
+g2Mjk0ODE1LDU0NDIzOTIxMF19
 -->
