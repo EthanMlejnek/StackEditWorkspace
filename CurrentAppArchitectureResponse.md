@@ -34,10 +34,11 @@ Benefits:
 Doable, but would take some time to integrate. We would essentially need to migrate the frontend/backend services to App Service resources, update/rewrite the CI/CD pipeline deployment process, and reconfigure DNS cutover to migrate the `orbit.commscope.com` hostname. One of the benefits mentioned was "no more manually installing/renewing certs on a VM," so maybe the DNS would be easier to configure, it would also provide the benefit of not having to worry about server config stuff in the future. I imagine the migration/configuration process would be similar to when I configured the production server, but perhaps easier? 
 
 --- 
-Problem Statement 1: `TestLabCentral` database name suggests the database is a test/lab database, but diagram shows only a single database backing prod/dev. Concern is that the name suggests "lab/test" data but production traffic depends on it, is production actually resting on a dataset that was never meant to be authoritative? 
-Problem Statement B: "SQL on a VM", the database runs on a SQL server instance that also hosts unrelated databases, we don't manage or have visibility into the server's patching, backups, or capacity
-    * Note: Original concern was likely that we have a SQL server running on a VM and not a managed database and therefore we are responsible for manually patching, performing backups, etc. In reality, the problem statement description is more accurate as we werer granted the SQL server by IT and lack the permissions to perform database management actions. Either way I think this stems from confusion surrounding the DB and where it is hot
+**Problem Statement A**: `TestLabCentral` database name suggests the database is a test/lab database, but diagram shows only a single database backing prod/dev. Concern is that the name suggests "lab/test" data but production traffic depends on it, is production actually resting on a dataset that was never meant to be authoritative? 
+**Problem Statement B:** "SQL on a VM", the database runs on a SQL server instance that also hosts unrelated databases, we don't manage or have visibility into the server's patching, backups, or capacity
+
+* **Note:** Original concern was likely that we have a SQL server running on a VM and not a managed database and therefore we are responsible for manually patching, performing backups, etc. In reality, the problem statement description is more accurate as we werer granted the SQL server by IT and lack the permissions to perform database management actions. Either way I think this stems from confusion surrounding the DB and where it is hosted exactly. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NTQ1MTI5LC0xMjE3NTk2ODg1LDEyOD
-YyOTQ4MTUsNTQ0MjM5MjEwXX0=
+eyJoaXN0b3J5IjpbMTA0MjM3MjY2NywtMTIxNzU5Njg4NSwxMj
+g2Mjk0ODE1LDU0NDIzOTIxMF19
 -->
