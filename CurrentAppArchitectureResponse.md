@@ -19,7 +19,11 @@ A "pet server" is infrastructure that's manually configured, unique, and irrepla
 **Requirements:**
 * Two App Service resources (frontend, backend) provisioned in the target subscription/resource group
 * Update CI/CD pipeline stages: replace the file-copy/artifact-drop steps with `AzureWebApp` deploy task (or similar) targeting each App Service
-* Removal of hardcoded custom ports (`:53098`, etc.) from frontend config, since App Service uses standard 
+* Removal of hardcoded custom ports (`:53098`, etc.) from frontend config, since App Service uses standard 443/80 with app-specific hostnames instead
+* DNS cutover plan (pointing `orbit.commscope.com` at the new App Service instead of the VM) 
+
+**Questions:**
+* How would we go about requesting App Service r
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MzQxMDk3MCw1NDQyMzkyMTBdfQ==
+eyJoaXN0b3J5IjpbMjA2ODA2NTM4Myw1NDQyMzkyMTBdfQ==
 -->
