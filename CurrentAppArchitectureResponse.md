@@ -26,7 +26,7 @@ A "pet server" is infrastructure that's manually configured, unique, and irrepla
 * How would we go about requesting/accessing the App Service resources? Would we need to be concerned about the cost of these resources? 
 
 **Feasibility:**
-Doable, but would take some time to integrate. We would essentially need to migrate the frontend/backend services to App Service resources, update/rewrite the CI/CD pipeline deployment process, and reconfigure DNS cutove
+Doable, but would take some time to integrate. We would essentially need to migrate the frontend/backend services to App Service resources, update/rewrite the CI/CD pipeline deployment process, and reconfigure DNS cutover to migrate the `orbit.commscope.com` hostname. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0Mzk1NTg0NCw1NDQyMzkyMTBdfQ==
+eyJoaXN0b3J5IjpbMTcyMjIzMDAwOSw1NDQyMzkyMTBdfQ==
 -->
