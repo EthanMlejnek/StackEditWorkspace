@@ -49,8 +49,10 @@ Doable, but would take some time to integrate. We would essentially need to migr
 **Difficulty** Medium. Azure SQL is wire-compatible with SQL Server/EF Core is almost all cases, so the app code likely wouldn't need logic changes, just a new connection string. The biggest risk would be the data migration cutover.
 **Estimated Relative Effort:** Weeks
 **Requirements:**
-* Az 
+* An Azure SQL Database provisioned with a Private Endpoint
+* A migration tool run (e.g., Azure Data Migration Assistant/Service) to assess compatibility and move data to new DB. 
+* A maintenance/cutover window, since the app can't write to the old and new databases at once without extra work  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzUwMTE4NjksLTEyMTc1OTY4ODUsMT
-I4NjI5NDgxNSw1NDQyMzkyMTBdfQ==
+eyJoaXN0b3J5IjpbNzcyNDQyMTU2LC0xMjE3NTk2ODg1LDEyOD
+YyOTQ4MTUsNTQ0MjM5MjEwXX0=
 -->
