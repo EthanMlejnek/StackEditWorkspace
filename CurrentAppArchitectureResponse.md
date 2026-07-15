@@ -11,8 +11,8 @@ A "pet server" is infrastructure that's manually configured, unique, and irrepla
 **Suggestion:** App Services for both tiers with Private Endpoints - replaces the VM with two managed PaaS App Service instances. 
 > **PaaS:** Platform as a Service is a cloud computing model where a provider delivers a complete, on-demand environment for developing, testing, and managing software applications. 
 
-
-
+**Solution:** Move Frontend + Backend to App Service
+> **Azure App Service:** Is a fully managed Platform-as-a-Service (PaaS) that lets you build. deploy, and scale web apps, mobile backen
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ0MjM5MjEwXX0=
+eyJoaXN0b3J5IjpbMjQxMTYzNjQ5LDU0NDIzOTIxMF19
 -->
