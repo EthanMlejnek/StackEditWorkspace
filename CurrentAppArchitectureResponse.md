@@ -17,7 +17,9 @@ A "pet server" is infrastructure that's manually configured, unique, and irrepla
 **Difficulty:** Medium-High
 **Estimated Relative Effort:** Weeks
 **Requirements:**
-* Two App Service resources (frontend, backend) provisioned 
+* Two App Service resources (frontend, backend) provisioned in the target subscription/resource group
+* Update CI/CD pipeline stages: replace the file-copy/artifact-drop steps with `AzureWebApp` deploy task (or similar) targeting each App Service
+* Removal of hardcoded custom ports (`:53098`, etc.) from frontend config, since App Service uses standard 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NjEzMjcyMSw1NDQyMzkyMTBdfQ==
+eyJoaXN0b3J5IjpbLTY2MzQxMDk3MCw1NDQyMzkyMTBdfQ==
 -->
