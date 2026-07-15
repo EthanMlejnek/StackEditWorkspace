@@ -23,7 +23,10 @@ A "pet server" is infrastructure that's manually configured, unique, and irrepla
 * DNS cutover plan (pointing `orbit.commscope.com` at the new App Service instead of the VM) 
 
 **Questions:**
-* How would we go about requesting App Service r
+* How would we go about requesting/accessing the App Service resources? Would we need to be concerned about the cost of these resources? 
+
+**Feasibility:**
+Doable, but would definately 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2ODA2NTM4Myw1NDQyMzkyMTBdfQ==
+eyJoaXN0b3J5IjpbLTYyMjMwMjU3LDU0NDIzOTIxMF19
 -->
