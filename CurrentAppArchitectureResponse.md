@@ -5,7 +5,8 @@ A "pet server" is infrastructure that's manually configured, unique, and irrepla
 
 Cons of the "pet server" architecture:
 * Someone has to RDP/PowerShell into the box to deploy, patch the OS, renew certs, restart services, etc. 
-* 
+* It's a single point of failure, if the VM goes down, both services go down together
+* Scaling either tier independently isn't possible without re-architecting (e.g., more frontend capacity without more
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMzE2ODgxMV19
+eyJoaXN0b3J5IjpbLTE2NTA2Mjg1MDJdfQ==
 -->
