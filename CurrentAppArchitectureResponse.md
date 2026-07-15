@@ -90,8 +90,8 @@ Doable, but would take some time to integrate. We would essentially need to migr
 3. Migrate frontend/backend Dev Services to App Service
 4. Create seperate Dev Azure SQL database
 
-All other areas of concern would essentially need to be resolve 
+All other areas of concern would essentially need to be resolved while we are in the process of completing the main migration points.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MzU3NDQ5MCw3NzI0NDIxNTYsLTEyMT
+eyJoaXN0b3J5IjpbLTQxMjY2MzQwOCw3NzI0NDIxNTYsLTEyMT
 c1OTY4ODUsMTI4NjI5NDgxNSw1NDQyMzkyMTBdfQ==
 -->
