@@ -59,6 +59,9 @@ Doable, but would take some time to integrate. We would essentially need to migr
 
 ### Integrate Seperate Development Database
 **Problem Statement (Dev DB):** Both development and production servers point at the same, single DB. If something goes wrong in testing, it can effect production. 
+* **Suggestion:** Implement a seperate development server
+* 
+
 
 #### Migrating Development Server to App Service
 
@@ -69,6 +72,6 @@ Doable, but would take some time to integrate. We would essentially need to migr
     * Point that environment at the *new development database* 
 * **Difficulty/Requirements/Effort:** Similar to migrating prod to App Service; second, lower-tier App Service and pipeline branch/trigger rewriting for new dev deployments. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNzU3NTc0OSw3NzI0NDIxNTYsLTEyMT
+eyJoaXN0b3J5IjpbLTE3NjQ3NjIyOCw3NzI0NDIxNTYsLTEyMT
 c1OTY4ODUsMTI4NjI5NDgxNSw1NDQyMzkyMTBdfQ==
 -->
