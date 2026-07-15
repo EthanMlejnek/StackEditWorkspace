@@ -52,7 +52,11 @@ Doable, but would take some time to integrate. We would essentially need to migr
 * An Azure SQL Database provisioned with a Private Endpoint
 * A migration tool run (e.g., Azure Data Migration Assistant/Service) to assess compatibility and move data to new DB. 
 * A maintenance/cutover window, since the app can't write to the old and new databases at once without extra work  
+
+---
+
+Problem Statement A: Dev server is HTTP-only and is an on-prem server, it runs Windows Server 2019 which is different that the OS run by prod (Windows Server Datacen
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcyNDQyMTU2LC0xMjE3NTk2ODg1LDEyOD
-YyOTQ4MTUsNTQ0MjM5MjEwXX0=
+eyJoaXN0b3J5IjpbNDk5NDA1MTI4LDc3MjQ0MjE1NiwtMTIxNz
+U5Njg4NSwxMjg2Mjk0ODE1LDU0NDIzOTIxMF19
 -->
