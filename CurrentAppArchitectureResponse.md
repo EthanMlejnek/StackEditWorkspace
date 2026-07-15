@@ -35,7 +35,8 @@ Doable, but would take some time to integrate. We would essentially need to migr
 
 --- 
 Problem Statement 1: `TestLabCentral` database name suggests the database is a test/lab database, but diagram shows only a single database backing prod/dev. Concern is that the name suggests "lab/test" data but production traffic depends on it, is production actually resting on a dataset that was never meant to be authoritative? 
+Problem Statement B: "SQL on a VM", the database runs on a SQL server instance that also hosts unrelated databases
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTc1OTY4ODUsMTI4NjI5NDgxNSw1ND
-QyMzkyMTBdfQ==
+eyJoaXN0b3J5IjpbLTExODcxNzQxNDUsLTEyMTc1OTY4ODUsMT
+I4NjI5NDgxNSw1NDQyMzkyMTBdfQ==
 -->
