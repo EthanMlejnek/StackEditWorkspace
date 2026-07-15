@@ -1,4 +1,4 @@
-
+### Conerns Regarding Current Prod S
 **Problem Statement:** The production Next.js frontend and ASP.NET Core backend both run as manually-managed processes on a single Azure VM, using custom ports and manually configured TLS certificates. 
 
 A "pet server" is infrastructure that's manually configured, unique, and irreplaceable. This is not a redundant design and therefore if it goes down it must be manually fixed, unlike the "cattle" architecture which is disposable/repeatable. 
@@ -35,8 +35,9 @@ Doable, but would take some time to integrate. We would essentially need to migr
 
 --- 
 
+### Concerns Regarding Current Prod DB & DB Architecture:
 
-**Problem Statement A**: `TestLabCentral` database name suggests the database is a test/lab database, but diagram shows only a single database backing prod/dev. Concern is that the name suggests "lab/test" data but production traffic depends on it, is production actually resting on a dataset that was never meant to be authoritative? 
+**Problem Statement A**: `TestLabCentral` database name suggests the database is a test/lab database, but diagram shows only a single database backing prod/dev. Concern is that the name suggests "lab/test" data but production traffic depends on it, is production actually resting on a dataset that was never meant to be "authoritative"? 
 **Problem Statement B:** "SQL on a VM", the database runs on a SQL server instance that also hosts unrelated databases, we don't manage or have visibility into the server's patching, backups, or capacity
 
 * **Note:** Original concern was likely that we have a SQL server running on a VM and not a managed database and therefore we are responsible for manually patching, performing backups, etc. In reality, the problem statement description is more accurate as we werer granted the SQL server by IT and lack the permissions to perform database management actions. Either way I think this stems from confusion surrounding the DB and where it is hosted exactly, and the suggested solution is the same either way. 
@@ -80,6 +81,6 @@ Doable, but would take some time to integrate. We would essentially need to migr
     * Point that environment at the *new development database* 
 * **Difficulty/Requirements/Effort:** Similar to migrating prod to App Service; second, lower-tier App Service and pipeline branch/trigger rewriting for new dev deployments. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjgxMjg4MjQsNzcyNDQyMTU2LC0xMj
-E3NTk2ODg1LDEyODYyOTQ4MTUsNTQ0MjM5MjEwXX0=
+eyJoaXN0b3J5IjpbLTk3MDM4MDkzMSw3NzI0NDIxNTYsLTEyMT
+c1OTY4ODUsMTI4NjI5NDgxNSw1NDQyMzkyMTBdfQ==
 -->
