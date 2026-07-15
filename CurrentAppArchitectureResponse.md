@@ -14,7 +14,10 @@ A "pet server" is infrastructure that's manually configured, unique, and irrepla
 **Solution:** Move Frontend + Backend to App Service
 > **Azure App Service:** Is a fully managed Platform-as-a-Service (PaaS) that lets you build. deploy, and scale web apps, mobile backends, and RESTful APIs without managing the underlying infrastructure. It handles OS patching, load balancing, and automated scailing, letting you focus purely on development. 
 
-**Difficulty:** Medium-High. 
+**Difficulty:** Medium-High
+**Estimated Relative Effort:** Weeks
+**Requirements:**
+* Two App Service resources (frontend, backend) provisioned 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjEzMDUzMTQsNTQ0MjM5MjEwXX0=
+eyJoaXN0b3J5IjpbMjA1NjEzMjcyMSw1NDQyMzkyMTBdfQ==
 -->
