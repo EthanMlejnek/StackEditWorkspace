@@ -57,14 +57,14 @@ Doable, but would take some time to integrate. We would essentially need to migr
 
 ### Move Development Server to Azure + Integrate Seperate Dev DB 
 
-**Problem Statement A (Dev Server):** Dev server is HTTP-only and is an on-prem server, it runs Windows Server 2019 which is different that the OS run by prod (Windows Server Datacenter 2022) and is out of mainstream support compared to WS2022. 
+#### Migrating Development Server to App Seri
+**Problem Statement (Dev Server):** Dev server is HTTP-only and is an on-prem server, it runs Windows Server 2019 which is different that the OS run by prod (Windows Server Datacenter 2022) and is out of mainstream support compared to WS2022. 
 * **Suggestion:** that if the app is going to live in Azure anyway, a dev slot/environment in the same "landing zone" resolves the "hybrid dependency" 
 * **Solution:** 
     * Deploy a second, lower-cost App Service (a "dev" or "staging" environment) inside the same Azure setup as production, instead of using the on-prem server for testing.
     * Point that environment at the *new development database* 
-* **Difficulty:** Same as migrating prod to App Service 
-* **Requirements:** Similar to migrating prod to App Service; second, lower-tier App Service and pipeline branch/trig
+* **Difficulty/Requirements/Effort:** Similar to migrating prod to App Service; second, lower-tier App Service and pipeline branch/trigger rewriting for new dev deployments. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE2NzA5ODcsNzcyNDQyMTU2LC0xMjE3NT
-k2ODg1LDEyODYyOTQ4MTUsNTQ0MjM5MjEwXX0=
+eyJoaXN0b3J5IjpbLTIwNjY0MTA4NjAsNzcyNDQyMTU2LC0xMj
+E3NTk2ODg1LDEyODYyOTQ4MTUsNTQ0MjM5MjEwXX0=
 -->
