@@ -12,7 +12,7 @@ A "pet server" is infrastructure that's manually configured, unique, and irrepla
 > **PaaS:** Platform as a Service is a cloud computing model where a provider delivers a complete, on-demand environment for developing, testing, and managing software applications. 
 
 **Solution:** Move Frontend + Backend to App Service
-Benefits: 
+**Benefits:**
 * Platform-managed TLS: no more manually installing/renewing certs on a VM 
 * Slot-based deploys: Deploy to a staging slot, swap to production with near-zero downtime, instead of the current "deploy to dev server, verify, then manually deploy to prod server" workflow
 * No custom ports: App Service exposes standard 443/80 with routing handled by the platform, instead of the frontend needing to know where the backend lives at `:53098`
@@ -39,8 +39,9 @@ Doable, but would take some time to integrate. We would essentially need to migr
 
 * **Note:** Original concern was likely that we have a SQL server running on a VM and not a managed database and therefore we are responsible for manually patching, performing backups, etc. In reality, the problem statement description is more accurate as we werer granted the SQL server by IT and lack the permissions to perform database management actions. Either way I think this stems from confusion surrounding the DB and where it is hosted exactly, and the suggested solution is the same either way. 
 
-** 
+**Suggestion:** Migrate database to Azure SQL
+> **Azure SQL:** Similar to App Service,  Azure SQL Database is a fully managed database service where mic
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MTI4Nzg1MCwtMTIxNzU5Njg4NSwxMj
-g2Mjk0ODE1LDU0NDIzOTIxMF19
+eyJoaXN0b3J5IjpbLTEwMzMzNzU3OTksLTEyMTc1OTY4ODUsMT
+I4NjI5NDgxNSw1NDQyMzkyMTBdfQ==
 -->
