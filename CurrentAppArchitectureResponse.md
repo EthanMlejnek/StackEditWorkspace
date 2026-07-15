@@ -64,6 +64,8 @@ Doable, but would take some time to integrate. We would essentially need to migr
 	* Create a genuinely seperate development/test database (second Azure SQL DB) that would only be used by non-production deployments. 
 	* **Note:** Likely would NOT be able to use existing development DB because:
 		* Would be a different DB implementation than the prod DB is prod is migrated to Azure SQL DB, so dev testing environment would not match prod. 
+        * Raises the same concern as the "dev server" problem statement but with the DB instead of the servers themselves. 
+* **Difficulty/Requirements
 
 
 #### Migrating Development Server to App Service
@@ -75,6 +77,6 @@ Doable, but would take some time to integrate. We would essentially need to migr
     * Point that environment at the *new development database* 
 * **Difficulty/Requirements/Effort:** Similar to migrating prod to App Service; second, lower-tier App Service and pipeline branch/trigger rewriting for new dev deployments. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjUyMzU3NzIsNzcyNDQyMTU2LC0xMj
-E3NTk2ODg1LDEyODYyOTQ4MTUsNTQ0MjM5MjEwXX0=
+eyJoaXN0b3J5IjpbMTYzMjg4MDkwNyw3NzI0NDIxNTYsLTEyMT
+c1OTY4ODUsMTI4NjI5NDgxNSw1NDQyMzkyMTBdfQ==
 -->
