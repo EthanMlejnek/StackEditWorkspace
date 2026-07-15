@@ -44,8 +44,10 @@ Doable, but would take some time to integrate. We would essentially need to migr
 
 **Solution:** Migrate database to Azure SQL
 * Set up Private Endpoint so the database is only reachable from your own App Service backend, not exposed on a shared network
-* Migrate the existing `TestLabCentral` data into the new Azure SQL database using a s
+* Migrate the existing `TestLabCentral` data into the new Azure SQL database using a standard database migration tool
+
+**Difficulty** Medium. Azure SQL is wire-compatible with SQL Server/EF Core is almost all cases, so the app code likely wouldn't need logic changes, just a new connection string. The biggest risk would be 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyODA4NTQ3LC0xMjE3NTk2ODg1LDEyOD
-YyOTQ4MTUsNTQ0MjM5MjEwXX0=
+eyJoaXN0b3J5IjpbLTc4NjM5ODU1MCwtMTIxNzU5Njg4NSwxMj
+g2Mjk0ODE1LDU0NDIzOTIxMF19
 -->
