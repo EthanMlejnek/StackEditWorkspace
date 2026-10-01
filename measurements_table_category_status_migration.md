@@ -30,11 +30,14 @@ In our development process, we make changes to the frontend/backend code and tes
 
 In our current database architecture, we have a `Measurements` table. This table is the core of the application as it holds over 100M+ measurement records and grows continuously and is also the most queried table in the database.
 
-The `Measurements` table is made up of the following columsn
+The `Measurements` table is made up of the following columns:
+
+| Column | Key | Type |
+| MeasurementId | PK |  | 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzU0NTUzODNdfQ==
+eyJoaXN0b3J5IjpbNTI5OTYwMDU4XX0=
 -->
