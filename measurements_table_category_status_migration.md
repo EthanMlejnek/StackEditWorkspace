@@ -12,7 +12,9 @@ In our current tech stack, we have two IIS servers (development/production). Eac
 Currently, we only have a **single** production database:
 * **Database:** Microsoft SQL Server 16.0.4215.2
 
+To summarize our tech stack in short, our backend API utilizes C#/LINQ queries with Entity Framework Core to make queries again our database 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNTY2MzkzNl19
+eyJoaXN0b3J5IjpbMTg5NDE3MTc0MV19
 -->
