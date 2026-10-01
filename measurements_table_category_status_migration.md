@@ -15,11 +15,11 @@ Currently, we only have a **single** production database:
 
 To summarize our tech stack in short, our backend API utilizes C#/LINQ queries with Entity Framework Core to make queries again our database, the frontend in turn queries the defined backend API methods to fetch/post/update content to/from the frontend web app.
 
-In our development process, we make changes and test them locally before d
+In our development process, we make changes to the frontend/backend code and test them locally before mer
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjEyMTQ4OTJdfQ==
+eyJoaXN0b3J5IjpbLTE3OTQ4Njg0MDhdfQ==
 -->
