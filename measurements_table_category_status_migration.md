@@ -1,6 +1,7 @@
 
 ### Tech Stack Context
-In our current tech stack, we have two IIS servers (development/production) each host a 
+In our current tech stack, we have two IIS servers (development/production). Each server hosts a version of our backend/frontend applications:
+* Backend API: ASP.NET Core C#
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MzA2MTAzMV19
+eyJoaXN0b3J5IjpbNzc0NTYzMTk0XX0=
 -->
