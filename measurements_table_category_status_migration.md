@@ -18,11 +18,14 @@ To summarize our tech stack in short, our backend API utilizes C#/LINQ queries w
 In our development process, we make changes to the frontend/backend code and test them locally before merging the changes to their respective frontend or backend `staging` branch, automatically triggers a release to the `development` IIS server. Once changes are fully tested on the dev server, we merge them to their respective frontend or backend `main` branch, triggering an automatic release to the `production` IIS server. 
 
 **Important Database Note:**
-* 
+* Each stage of the development process (local/dev/prod) executes queries against the **production** database. This is because we currently only have a single database at our disposal. 
+
+## Problem Context
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3OTkwOTk0Nl19
+eyJoaXN0b3J5IjpbMTM0Mzk2MDU2M119
 -->
