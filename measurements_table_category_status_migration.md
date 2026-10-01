@@ -15,11 +15,14 @@ Currently, we only have a **single** production database:
 
 To summarize our tech stack in short, our backend API utilizes C#/LINQ queries with Entity Framework Core to make queries again our database, the frontend in turn queries the defined backend API methods to fetch/post/update content to/from the frontend web app.
 
-In our development process, we make changes to the frontend/backend code and test them locally before mer
+In our development process, we make changes to the frontend/backend code and test them locally before merging the changes to their respective frontend or backend `staging` branch, automatically triggers a release to the `development` IIS server. Once changes are fully tested on the dev server, we merge them to their respective frontend or backend `main` branch, triggering an automatic release to the `production` IIS server. 
+
+**Important Database Note:**
+* 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTQ4Njg0MDhdfQ==
+eyJoaXN0b3J5IjpbLTU3OTkwOTk0Nl19
 -->
