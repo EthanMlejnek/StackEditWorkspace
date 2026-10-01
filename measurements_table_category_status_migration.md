@@ -33,11 +33,15 @@ In our current database architecture, we have a `Measurements` table. This table
 The `Measurements` table is made up of the following columns:
 
 | Column | Key | Type |
-| MeasurementId | PK |  | 
+|--|--|--|
+| MeasurementId | PK | bigint, not null | 
+| TestId | FK | int, null
+| ChannelId | FK | int, null
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI5OTYwMDU4XX0=
+eyJoaXN0b3J5IjpbMjA1MjM5ODE3Nl19
 -->
