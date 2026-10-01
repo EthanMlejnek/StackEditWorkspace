@@ -18,7 +18,8 @@ Currently, we only have a **single** production database:
 To summarize our tech stack in short, our backend API utilizes C#/LINQ queries with Entity Framework Core to make queries again our database, the frontend in turn queries the defined backend API methods to fetch/post/update content to/from the frontend web app.
 
 **Main Purpose of this Application:**
-The main purpose of this application as a whole is to serve as a **labratory management system** that allows Test Engineers and Technicians to view, modify, and analyze 
+The main purpose of this application as a whole is to serve as a **labratory management system** that allows Test Engineers and Technicians to view, modify, and analyze measurements taken for a test and test results based on those measurements.
+
 **Current Development Process:**
 In our development process, we make changes to the frontend/backend code and test them locally before merging the changes to their respective frontend or backend `staging` branch, automatically triggers a release to the `development` IIS server. Once changes are fully tested on the dev server, we merge them to their respective frontend or backend `main` branch, triggering an automatic release to the `production` IIS server. 
 
@@ -27,10 +28,12 @@ In our development process, we make changes to the frontend/backend code and tes
 
 ## Problem Context
 
+In our current database architecture, we have a `Measurements` table. This table is the core of the application as it holds over 100M+ measurement records and grows continuously. 
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODY2OTgxXX0=
+eyJoaXN0b3J5IjpbLTEyMDQwMTk5ODNdfQ==
 -->
