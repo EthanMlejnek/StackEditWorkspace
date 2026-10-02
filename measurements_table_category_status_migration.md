@@ -28,20 +28,11 @@ In our development process, we make changes to the frontend/backend code and tes
 
 ## Problem Context
 
-In our current database architecture, we have a `Measurements` table. This table is the core of the application as it holds over 100M+ measurement records and grows continuously and is also the most queried table in the database.
-
-The `Measurements` table is made up of the following columns:
-
-| Column | Key | Type |
-|--|--|--|
-| MeasurementId | PK | bigint, not null | 
-| TestId | FK | int, null
-| ChannelId | FK | int, null
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MjM5ODE3Nl19
+eyJoaXN0b3J5IjpbLTE4MDk1MDk5NTgsMjA1MjM5ODE3Nl19
 -->
